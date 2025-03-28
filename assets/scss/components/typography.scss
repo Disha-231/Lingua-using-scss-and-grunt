@@ -1,2 +1,78 @@
 @use "../variables.scss" as *;
 
+h1,
+.h1 {
+    font-size: 56px;
+}
+h2,
+.h2 {
+    font-size: 36px;
+}
+h3,
+.h3 {
+    font-size: 24px;
+}
+h4,
+.h4 {
+    font-size: 18px;
+}
+h5,
+.h5 {
+    font-size: 14px;
+}
+h6,
+.h6 {
+    font-size: 12px;
+}
+@media (max-width: 992) {
+    h1,
+    .h1 {
+        font-size: 48px;
+    }
+    h2,
+    .h2 {
+        font-size: 32px;
+    }
+    h3,
+    .h3 {
+        font-size: 20px;
+    }
+    h4,
+    .h4 {
+        font-size: 16px;
+    }
+    h5,
+    .h5 {
+        font-size: 12px;
+    }
+    h6,
+    .h6 {
+        font-size: 10px;
+    }
+}
+@media (max-width: 768px) {
+    h1,
+    .h1 {
+        font-size: 40px;
+    }
+    h2,
+    .h2 {
+        font-size: 28px;
+    }
+    h3,
+    .h3 {
+        font-size: 18px;
+    }
+    h4,
+    .h4 {
+        font-size: 14px;
+    }
+    h5,
+    .h5 {
+        font-size: 10px;
+    }
+    h6,
+    .h6 {
+        font-size: 10px;
+    }
+}

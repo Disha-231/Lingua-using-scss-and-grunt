@@ -1,3 +1,5 @@
+
+// slick slider meet our team
 $(document).ready(function () {
   $('.teacher-slider').slick({
       slidesToShow: 3,
@@ -49,4 +51,33 @@ $(document).ready(function () {
           $('.next').removeClass('active');
       }
   });
+});
+
+
+// toggle-----------------------
+
+document.addEventListener('DOMContentLoaded', function() {
+    const toggleBtn = document.getElementById('toggleBtn');
+    const closeBtn = document.getElementById('closeBtn');
+    const mobileSidebar = document.getElementById('mobileSidebar');
+    
+    // Toggle sidebar
+    toggleBtn.addEventListener('click', function() {
+        mobileSidebar.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    });
+    
+    // Close sidebar
+    closeBtn.addEventListener('click', function() {
+        mobileSidebar.classList.remove('active');
+        document.body.style.overflow = '';
+    });
+    
+    // Close sidebar when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!mobileSidebar.contains(e.target) && e.target !== toggleBtn) {
+            mobileSidebar.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    });
 });
