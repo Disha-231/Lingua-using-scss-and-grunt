@@ -1,0 +1,45 @@
+@use "../variables.scss" as *;
+
+
+.our-value {
+    .value-title {
+        .why-choose-us {
+            font-weight: 700;
+            font-size: 14px;
+            text-transform: uppercase;
+            color: $gray;
+        }
+        .value {
+            font-weight: 300;
+            font-size: 48px;
+            color: $black;
+        }
+    }
+    .our-service {
+        margin: 50px 0;
+        .value-box {
+            .value-img {
+               .service-imgs{
+                text-align: center;
+                width: 80px;
+               }
+            }
+            .value-info {
+                .value-title {
+                    font-weight: 500;
+                    font-size: 24px;
+                    line-height: 36px;
+                    letter-spacing: 0%;
+                }
+                .value-text {
+                    color: $gray;
+                    font-weight: 300;
+                    font-size: 18px;
+                    line-height: 190%;
+                    letter-spacing: 0px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

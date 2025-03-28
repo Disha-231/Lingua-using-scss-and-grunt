@@ -1,0 +1,33 @@
+{
+  "dependencies": {
+    "aos": "^2.3.4",
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3"
+  },
+  "name": "Lingua",
+  "description": "",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+  },
+  "devDependencies": {
+    "bootstrap-icons": "^1.11.3",
+    "grunt": "^1.5.3",
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-contrib-concat": "^2.1.0",
+    "grunt-contrib-cssmin": "^5.0.0",
+    "grunt-contrib-sass": "^2.0.0",
+    "grunt-contrib-uglify": "^5.2.2",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-sass": "^4.0.0"
+  }
+}

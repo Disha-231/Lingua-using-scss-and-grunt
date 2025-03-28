@@ -1,0 +1,45 @@
+@use "../variables.scss" as *;
+
+.slider {
+    .slider-content {
+        margin-top: 100px;
+        .slider-text {
+            font-weight: 300;
+            font-size: 56px;
+            line-height: 126%;
+            letter-spacing: $space2;
+
+            .unique {
+                font-weight: 500;
+                font-size: 56px;
+                line-height: 126%;
+                color: $primary;
+            }
+        }
+
+        .slider-info {
+            margin:40px 0;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 190%;
+            color: $gray;
+        }
+        .slider-btn {
+            width: 171px;
+            height: 64px;
+            border-radius: 73px;
+            gap: 10px;
+            padding-top: 24px;
+            padding-right: 32px;
+            padding-bottom: 24px;
+            padding-left: 32px;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 100%;
+            letter-spacing: 0px;
+            text-align: center;
+            color: $white;
+            background-color: $primary;
+        }
+    }
+}

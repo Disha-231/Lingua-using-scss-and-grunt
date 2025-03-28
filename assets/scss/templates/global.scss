@@ -1,0 +1,16 @@
+@use "../variables.scss" as *;
+
+a{
+    text-decoration: none;
+    color: $gray;
+}
+ul,
+li{
+    list-style: none;
+}
+button{
+    border: 0;
+}
+body{
+    font-family: $font-family-primary;
+}
