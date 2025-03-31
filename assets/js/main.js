@@ -6,8 +6,8 @@ $(document).ready(function () {
       slidesToScroll: 1,
       infinite: true,
       arrows: true,
-      prevArrow: '<button type="button" class="prev">❮</button>',
-      nextArrow: '<button type="button" class="next">❯</button>',
+      prevArrow: '<button type="button" class=" d-flex align-items-center justify-content-center prev">❮</button>',
+      nextArrow: '<button type="button" class=" d-flex align-items-center justify-content-center next">❯</button>',
       responsive: [
           {
               breakpoint: 1200,
@@ -51,33 +51,4 @@ $(document).ready(function () {
           $('.next').removeClass('active');
       }
   });
-});
-
-
-// toggle-----------------------
-
-document.addEventListener('DOMContentLoaded', function() {
-    const toggleBtn = document.getElementById('toggleBtn');
-    const closeBtn = document.getElementById('closeBtn');
-    const mobileSidebar = document.getElementById('mobileSidebar');
-    
-    // Toggle sidebar
-    toggleBtn.addEventListener('click', function() {
-        mobileSidebar.classList.add('active');
-        document.body.style.overflow = 'hidden';
-    });
-    
-    // Close sidebar
-    closeBtn.addEventListener('click', function() {
-        mobileSidebar.classList.remove('active');
-        document.body.style.overflow = '';
-    });
-    
-    // Close sidebar when clicking outside
-    document.addEventListener('click', function(e) {
-        if (!mobileSidebar.contains(e.target) && e.target !== toggleBtn) {
-            mobileSidebar.classList.remove('active');
-            document.body.style.overflow = '';
-        }
-    });
 });

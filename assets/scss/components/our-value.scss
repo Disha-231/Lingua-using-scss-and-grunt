@@ -1,17 +1,16 @@
 @use "../variables.scss" as *;
 
-
 .our-value {
     .value-title {
         .why-choose-us {
-            font-weight: 700;
-            font-size: 14px;
+            font-weight: $font-weight-700;
+            font-size: $font-14;
             text-transform: uppercase;
             color: $gray;
         }
         .value {
-            font-weight: 300;
-            font-size: 48px;
+            font-weight: $font-weight-300;
+            font-size: $font-48;
             color: $black;
         }
     }
@@ -19,25 +18,21 @@
         margin: 50px 0;
         .value-box {
             .value-img {
-               .service-imgs{
-                text-align: center;
-                width: 80px;
-               }
+                .service-imgs {
+                    width: 80px;
+                }
             }
             .value-info {
                 .value-title {
-                    font-weight: 500;
-                    font-size: 24px;
+                    font-weight: $font-weight-500;
+                    font-size: $font-24;
                     line-height: 36px;
-                    letter-spacing: 0%;
                 }
                 .value-text {
                     color: $gray;
-                    font-weight: 300;
-                    font-size: 18px;
+                    font-weight: $font-weight-300;
+                    font-size: $font-18;
                     line-height: 190%;
-                    letter-spacing: 0px;
-                    text-align: center;
                 }
             }
         }
