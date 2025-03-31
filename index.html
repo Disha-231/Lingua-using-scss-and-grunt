@@ -5,63 +5,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>project-2</title>
-
     <!-- styles  -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/Lingua-compress.min.css">
+    <link rel="stylesheet" href="./assets/css/lingua-compress.min.css">
     <!--slick slider -->
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
-
+    <link rel="stylesheet" href="assets/css/slick.min.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="assets/css/swiper-slider.css">
     <link rel="stylesheet" href="./assets/css/style.min.css">
 </head>
 
 <body>
     <div class="main">
         <!--header-->
-        <header class="header">
+        <nav class="navbar navbar-expand-lg">
             <div class="container">
-                <div class="row">
-                    <div
-                        class="col-md-12 d-flex justify-content-between justify-content-center align-items-center text-align-center header-content">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/img/header-logo.png" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
 
-                        <div class="col-2 logo">
-                            <img src="assets/img/header-logo.png" alt="header-logo">
-                        </div>
-                        <div class="col-8 menu-content ">
-                            <ul class=" d-flex justify-content-evenly menu pt-3" id="menulist">
-                                <li class="nav-item">
-                                    <a href="#" class="menulists"> Courses</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="menulists"> About us</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="menulists"> Teachers</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="menulists"> Pricing</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="menulists"> Careers</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="menulists"> Blog</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-2 start-btn d-flex justify-content-end">
-                            <button class="get-starting text-align-center">Get Starting</button>
-                        </div>
-                        <div class="toggle">
-                            <i class="fa-solid fa-bars toggle-icon" onclick="toggleMenu()"></i>
-                        </div>
-                    </div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">course</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">about us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">teacher</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">price</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">career</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">blog</a>
+                        </li>
+
+                    </ul>
+                    <form class="d-flex header-btn" role="search">
+
+                        <button class="btn " type="submit">get started</button>
+                    </form>
                 </div>
             </div>
-        </header>
+        </nav>
         <!---slider-->
         <section class="slider">
             <div class="container">
@@ -85,48 +81,46 @@
     <!--our value-->
     <section class="our-value ">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12 value-title text-center">
-                    <span class="why-choose-us ">Why choose us </span><br>
-                    <h2 class="value">our value</h2>
+            <div class="col-md-12 value-title text-center">
+                <span class="why-choose-us ">Why choose us </span><br>
+                <h2 class="value">our value</h2>
+            </div>
+            <div class="col-md-12 text-center justify-content-evenly d-flex flex-wrap our-service">
+                <div class="col-md-3 value-box">
+                    <div class="value-img ">
+                        <img src="assets/img/video.png" class="img-fluid service-imgs  text-align-center" alt="">
+                    </div>
+                    <div class="value-info">
+                        <h3 class="value-title pt-5">Speaking clubs</h3>
+                        <p class="value-text  text-align-center d-flex flex-wrap px-3 ">In our school you will
+                            practice your
+                            speaking skills and just get a lot of positive emotions!
+                        </p>
+                    </div>
                 </div>
-                <div class="col-md-12 text-center justify-content-evenly d-flex flex-wrap our-service">
-                    <div class="col-md-3 value-box">
-                        <div class="value-img ">
-                            <img src="assets/img/video.png" class="img-fluid service-imgs  text-align-center" alt="">
-                        </div>
-                        <div class="value-info">
-                            <h3 class="value-title pt-5">Speaking clubs</h3>
-                            <p class="value-text  text-align-center d-flex flex-wrap px-3 ">In our school you will practice your
-                                speaking skills and just get a lot of positive emotions!
-                            </p>
-                        </div>
+                <div class="col-md-3 value-box">
+                    <div class="value-img ">
+                        <img src="assets/img/share.png" class="img-fluid service-imgs" alt="">
                     </div>
-
-                    <div class="col-md-3 value-box">
-                        <div class="value-img ">
-                            <img src="assets/img/share.png" class="img-fluid service-imgs" alt="">
-                        </div>
-                        <div class="value-info">
-                            <h3 class="value-title pt-4">Quality control</h3>
-                            <p class="value-text  text-align-center d-flex flex-wrap px-3 ">A huge work has been done with the teachers and
-                                their work has been monitored thoroughly.
-                            </p>
-                        </div>
+                    <div class="value-info">
+                        <h3 class="value-title pt-4">Quality control</h3>
+                        <p class="value-text  text-align-center d-flex flex-wrap px-3 ">A huge work has been done
+                            with the teachers and
+                            their work has been monitored thoroughly.
+                        </p>
                     </div>
-
-                    <div class="col-md-3 value-box">
-                        <div class="value-img ">
-                            <img src="assets/img/file.png" class="img-fluid service-imgs" alt="">
-                        </div>
-                        <div class="value-info">
-                            <h3 class="value-title pt-5">Progress analysis</h3>
-                            <p class="value-text  text-align-center d-flex flex-wrap px-3 ">The CEF of Reference has been used at our
-                                school. It allows to control our success in studying.
-                            </p>
-                        </div>
+                </div>
+                <div class="col-md-3 value-box">
+                    <div class="value-img ">
+                        <img src="assets/img/file.png" class="img-fluid service-imgs" alt="">
                     </div>
-
+                    <div class="value-info">
+                        <h3 class="value-title pt-5">Progress analysis</h3>
+                        <p class="value-text  text-align-center d-flex flex-wrap px-3 ">The CEF of Reference has
+                            been used at our
+                            school. It allows to control our success in studying.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -190,56 +184,121 @@
                             <div class="teacher-position pt-2">Spanish teacher</div>
                         </div>
                     </div>
-                    <div class="teacher-details-box">
-                        <div class="teacher-photo">
-                            <img src="assets/img/person-3.png" width="366px" height="417px" class="img-fluid" alt="">
-                            <div class="teacher-name">Jimmy Cooper</div>
-                        </div>
-                        <div class="teacher-bg d-flex align-items-center">
-                            <img src="assets/img/flag-2.png" alt="" class="flag">
-                            <div class="teacher-position pt-2">English teacher</div>
-                        </div>
-                    </div>
-                    <div class="teacher-details-box">
-                        <div class="teacher-photo">
-                            <img src="assets/img/person-1.png" width="366px" height="417px" class="img-fluid" alt="">
-                            <div class="teacher-name">Christian Howard</div>
-                        </div>
-                        <div class="teacher-bg d-flex align-items-center">
-                            <img src="assets/img/flag-3.png" alt="">
-                            <div class="teacher-position pt-2">Italian teacher</div>
-                        </div>
-                    </div>
-                    <div class="teacher-details-box">
-                        <div class="teacher-photo">
-                            <img src="assets/img/person-2.png" width="366px" height="417px" class="img-fluid" alt="">
-                            <div class="teacher-name">Sandra Wilson</div>
-                        </div>
-                        <div class="teacher-bg d-flex align-items-center">
-                            <img src="assets/img/flag-1.png" alt="">
-                            <div class="teacher-position pt-2">Spanish teacher</div>
-                        </div>
-                    </div>
-                    <div class="teacher-details-box">
-                        <div class="teacher-photo">
-                            <img src="assets/img/person-3.png" width="366px" height="417px" class="img-fluid" alt="">
-                            <div class="teacher-name">Jimmy Cooper</div>
-                        </div>
-                        <div class="teacher-bg d-flex align-items-center">
-                            <img src="assets/img/flag-2.png" alt="" class="flag">
-                            <div class="teacher-position pt-2">English teacher</div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- student-review -->
+    <section class="student-review">
+        <div class="container">
 
-    <script src="./assets/js/Lingua-compress.min.js"></script>
+            <div class="col-12 student-sec-title">
+                <h2 class="view-title">top studiying</h2>
+                <h3 class="student-say">Our students say</h3>
+            </div>
+            <div class="col-12 student-infoo">
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="col-6 student-photo">
+                                    <img src="assets/img/person-4.png" alt="">
+                                </div>
+                                <div class="col-6 student-review-content">
+                                    <div class="student-review-name py-2">Martin Watson</div>
+                                    <img src="assets/img/flag-3.png" class="student-country" alt="">
+                                    <span class="student-course">B2 course student</span>
+                                    <p class="student-review-text py-4">There is no way I could have made the same
+                                        progress learning Spanish without using Lingua. The best part is now
+                                        learning Spanish has become one of my biggest hobbies.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="col-6 student-photo">
+                                    <img src="assets/img/person-4.png" alt="">
+                                </div>
+                                <div class="col-6 student-review-content">
+                                    <div class="student-review-name py-2">Martin Watson</div>
+                                    <img src="assets/img/flag-3.png" class="student-country" alt="">
+                                    <span class="student-course">B2 course student</span>
+                                    <p class="student-review-text py-4">There is no way I could have made the same
+                                        progress learning Spanish without using Lingua. The best part is now
+                                        learning Spanish has become one of my biggest hobbies.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="col-6 student-photo">
+                                    <img src="assets/img/person-4.png" alt="">
+                                </div>
+                                <div class="col-6 student-review-content">
+                                    <div class="student-review-name py-2">Martin Watson</div>
+                                    <img src="assets/img/flag-3.png" class="student-country" alt="">
+                                    <span class="student-course">B2 course student</span>
+                                    <p class="student-review-text py-4">There is no way I could have made the same
+                                        progress learning Spanish without using Lingua. The best part is now
+                                        learning Spanish has become one of my biggest hobbies.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="col-6 student-photo">
+                                    <img src="assets/img/person-4.png" alt="">
+                                </div>
+                                <div class="col-6 student-review-content">
+                                    <div class="student-review-name py-2">Martin Watson</div>
+                                    <img src="assets/img/flag-3.png" class="student-country" alt="">
+                                    <span class="student-course">B2 course student</span>
+                                    <p class="student-review-text py-4">There is no way I could have made the same
+                                        progress learning Spanish without using Lingua. The best part is now
+                                        learning Spanish has become one of my biggest hobbies.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="col-6 student-photo">
+                                    <img src="assets/img/person-4.png" alt="">
+                                </div>
+                                <div class="col-6 student-review-content">
+                                    <div class="student-review-name py-2">Martin Watson</div>
+                                    <img src="assets/img/flag-3.png" class="student-country" alt="">
+                                    <span class="student-course">B2 course student</span>
+                                    <p class="student-review-text py-4">There is no way I could have made the same
+                                        progress learning Spanish without using Lingua. The best part is now
+                                        learning Spanish has become one of my biggest hobbies.</p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-pagination "></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- js-file attatch -->
+    <script src="./assets/js/lingua-compress.min.js"></script>
     <script src="assets/js/main.js"></script>
     <!-- slick slider -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="assets/js/slick-slider.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+
+    <!-- Swiper JS -->
+     <script src="assets/js/swiper-js.js"></script>
+
+
 </body>
 
 </html>

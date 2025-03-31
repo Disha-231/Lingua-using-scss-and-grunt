@@ -70,7 +70,7 @@
 // slick slider btn
 .prev,
 .next {
-    padding: 20px;
+    padding: 3px 14px;
     background-color: transparent;
     color: $gray;
     border: 1px solid $gray;
@@ -88,14 +88,14 @@
     }
 }
 .prev {
-    right: 20%;
+    right: 10%;
 }
 .next {
-    right: 15%;
+    right: 5%;
 }
 .slick-disabled {
     opacity: 0.5;
-    cursor: pointer;
+    cursor: not-allowed;
     &:hover {
         background-color: transparent;
         color: $gray;

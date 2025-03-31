@@ -7,79 +7,13 @@ $primary: #524fd5;
 $white: #fff;
 $gray: #666680;
 $black: #000000;
-$bg-color: #FFF5F1;
+$bg-color: #fff5f1;
 
 // Spacing
 $space2: 2px;
 $space4: 4px;
 $space5: 5px;
 $space6: 6px;
-$space8: 8px;
-$space10: 10px;
-$space12: 12px;
-$space14: 14px;
-$space15: 15px;
-$space16: 16px;
-$space18: 18px;
-$space20: 20px;
-$space24: 24px;
-$space26: 26px;
-$space28: 28px;
-$space30: 30px;
-$space32: 32px;
-$space34: 34px;
-$space40: 40px;
-$space45: 45px;
-$space48: 48px;
-$space50: 50px;
-$space54: 54px;
-$space56: 56px;
-$space60: 60px;
-$space62: 62px;
-$space64: 64px;
-$space68: 68px;
-$space70: 70px;
-$space76: 76px;
-$space80: 80px;
-$space85: 85px;
-$space90: 90px;
-$space100: 100px;
-$space120: 120px;
-$space130: 130px;
-$space150: 150px;
-$space160: 160px;
-$space124: 124px;
-$space128: 128px;
-$space165: 165px;
-$space190: 190px;
-$space200: 200px;
-$space210: 210px;
-$space215: 215px;
-$space235: 235px;
-$space220: 220px;
-$space255: 255px;
-$space270: 270px;
-$space290: 290px;
-$space300: 300px;
-$space320: 320px;
-$space350: 350px;
-$space385: 385px;
-$space395: 395px;
-$space420: 420px;
-$space435: 435px;
-$space450: 450px;
-$space470: 470px;
-$space531: 531px;
-$space584: 584px;
-$space484: 484px;
-$space600: 600px;
-$space625: 625px;
-$space680: 680px;
-$space730: 730px;
-$space820: 820px;
-$space850: 850px;
-$space1020: 1020px;
-$space1030: 1030px;
 
 // Font size
 $h1-font-size: 60px;
@@ -92,49 +26,33 @@ $h3-font-size: 32px;
 $h3-mobile-size: 20px;
 $h4-mobile-size: 16px;
 $h6-mobile-size: 14px;
-
-$font-20: 20px;
-$font-24: 24px;
-$font-26: 26px;
-$font-28: 28px;
-$font-50: 50px;
-$font-48: 48px;
-$font-44: 44px;
-$font-42: 42px;
-$font-40: 40px;
-$font-60: 60px;
-$font-68: 68px;
-$font-70: 70px;
-$font-72: 72px;
-$font-80: 80px;
-$font-85: 85px;
-$font-28: 28px;
-$font-32: 32px;
-$font-34: 34px;
-$font-38: 38px;
-$font-30: 30px;
-$font-100: 100px;
-$font-116: 116px;
-$font-120: 120px;
-$font-150: 150px;
-$font-180: 180px;
-$font-300: 300px;
-$font-200: 200px;
-$font-250: 250px;
-$font-280: 280px;
 $h4-font-size: 24px;
-$h4-mobile-size: 18px;
 $h5-font-size: 20px;
 $h6-font-size: 18px;
 
+$font-10: 10px;
+$font-12: 12px;
+$font-14: 14px;
 $font-16: 16px;
 $font-18: 18px;
-$font-14: 14px;
-$font-13: 13px;
-$font-12: 12px;
-$font-10: 10px;
 $font-22: 22px;
-$font-56:56px;
+$font-24: 24px;
+$font-26: 26px;
+$font-28: 28px;
+$font-30: 30px;
+$font-32: 32px;
+$font-34: 34px;
+$font-36: 36px;
+$font-38: 38px;
+$font-40: 40px;
+$font-42: 42px;
+$font-44: 44px;
+$font-46: 46px;
+$font-48: 48px;
+$font-50: 50px;
+$font-52: 52px;
+$font-54: 54px;
+$font-56: 56px;
 
 //Font weight
 $font-weight-300: 300;
@@ -144,28 +62,12 @@ $font-weight-600: 600;
 $font-weight-700: 700;
 
 //border-radius
-$border-radius-0: 0px;
-$border-radius-1: 1px;
-$border-radius-4: 4px;
-$border-radius-5: 5px;
-$border-radius-6: 6px;
-$border-radius-8: 8px;
 $border-radius-10: 10px;
 $border-radius-12: 12px;
-$border-radius-16: 16px;
-$border-radius-18: 18px;
-$border-radius-20: 20px;
 $border-radius-24: 24px;
 $border-radius-50: 50px;
 $border-radius-70: 70px;
-$border-radius-100: 100px;
-$border-radius-150: 150px;
-$border-radius-50pr: 50%;
-$border-radius-100pr: 100%;
 
-// box-shadow
-$header-shadow: #000000;
-$sidebar-shadow: -2px 0px 10px rgba(0, 0, 0, 0.5);
 
 // Border width
 $border-width-1: 1px;
@@ -184,21 +86,17 @@ $lg-breakpoint: 992px;
 $md-breakpoint: 768px;
 $sm-breakpoint: 576px;
 
-//icon
-$play-icon-top: 50%;
-$play-icon-left: 50%;
-
 //width
 $width-100: 100%;
 $width-50: 50%;
 $width-25: 25%;
 $width-75: 75%;
-$btn-width:34px;
-$btn-height:34px;
+$btn-width: 34px;
+$btn-height: 34px;
 
 //padding
 
-$padding-top-100:100px;
-$padding-top-50:50px;
-$padding-bottom-100:100px;
-$padding-bottom-50:50px
+$padding-top-100: 100px;
+$padding-top-50: 50px;
+$padding-bottom-100: 100px;
+$padding-bottom-50: 50px;

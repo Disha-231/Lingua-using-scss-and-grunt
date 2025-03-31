@@ -2,7 +2,8 @@
   "dependencies": {
     "aos": "^2.3.4",
     "bootstrap": "^5.3.3",
-    "bootstrap-icons": "^1.11.3"
+    "bootstrap-icons": "^1.11.3",
+    "swiper": "^11.2.6"
   },
   "name": "Lingua",
   "description": "",
@@ -17,8 +18,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-  },
+  "bugs": {},
   "devDependencies": {
     "bootstrap-icons": "^1.11.3",
     "grunt": "^1.5.3",

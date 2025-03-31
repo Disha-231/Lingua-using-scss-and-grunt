@@ -1,0 +1,62 @@
+@use "../variables.scss" as *;
+
+// our-student-say:--------
+
+.student-review {
+    padding-top: 150px;
+    .student-sec-title {
+        margin-bottom: 40px;
+        .view-title {
+            font-weight: $font-weight-700;
+            font-size: $font-18;
+            color: $gray;
+            text-transform: uppercase;
+        }
+        .student-say {
+            font-weight: $font-weight-300;
+            font-size: $font-48;
+        }
+    }
+    .student-infoo {
+        .swiper {
+            .swiper-wrapper {
+                .swiper-slide {
+                    .student-review-content {
+                        position: relative;
+                        padding-bottom: 50px;
+                        .student-review-name {
+                            font-size: $font-32;
+                            font-weight: $font-weight-700;
+                        }
+                        .student-country {
+                            transform: translateY(-5px);
+                        }
+                        .student-course {
+                            font-weight: $font-weight-300;
+                            font-size: $font-18;
+                            color: $gray;
+                        }
+                        .student-review-text {
+                            font-size: $font-24;
+                            font-weight: $font-weight-300;
+                        }
+                    }
+                }
+            }
+            .swiper-pagination {
+                position: absolute;
+                left: 40px;
+                top: 450px;
+            }
+            .swiper-pagination-bullet {
+                width: 6px;
+                height: 6px;
+                background-color: #ccc;
+                opacity: 1;
+            }
+            .swiper-pagination-bullet-active {
+                background-color: $primary;
+            }
+        }
+    }
+}
