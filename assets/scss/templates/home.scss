@@ -8,28 +8,26 @@
             }
         }
         .swiper-pagination {
-            position: relative;
-            bottom: 150px;
             left: 47%;
+            top: 80%;
             .swiper-pagination-bullet {
                 width: 6px;
                 height: 6px;
                 background-color: $secondary;
-                opacity: 1;
-                margin: 0 5px;
+                opacity: $opacity;
+                margin: 0 $space6;
                 &-active {
                     background-color: $primary;
                 }
             }
         }
-    }
-    @media (max-width: 767px) {
-        padding: 50px 0;
-        .student-sec-title {
-            padding: 25px 0;
-        }
-        .student-review-content {
-            text-align: center;
+        .swiper {
+            @media (max-width: $lg-breakpoint) {
+                .swiper-pagination {
+                    left: 40%;
+                    top: 97%;
+                }
+            }
         }
     }
 }
@@ -37,11 +35,10 @@
 .faq {
     .faq-item {
         background: transparent;
-        border: $border-width-1 $border-solid $secondary;
-        margin: 20px 0;
-        padding: 15px;
+        border: $border-width-1 $border-solid $light-gray;
+        margin: $space20 0;
+        padding: $space16;
         border-radius: $border-radius-24;
-        transition: background $transition;
         &.active {
             background: $primary;
             color: $white;
@@ -56,40 +53,36 @@
             font-weight: $font-weight-700;
         }
         .faq-answer {
-            display: none;
-            padding-top: 10px;
+            display: $display-none;
+            padding-top: $space10;
         }
     }
 }
-// free trial:-
-.free-trial {
-    .trial-info {
-        .email {
-            width: 410px;
-            padding: 15px;
-            border: 0;
-            border-radius: $border-radius-24;
-            background-color: #f8fafe;
-            outline: none;
-            &::placeholder {
-                color: $dark-gray;
-                font-size: 18px;
-            }
-        }
+// animation:-------------------
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(50px);
+    transition:
+        opacity 0.8s ease-out,
+        transform 0.8s ease-out;
+    &.animate-on-scroll.show {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
-// footer
-.footer {
-    .footer-icon {
-        .border-fb {
-            border: $border-width-1 $border-solid $secondary;
-            padding: 10px 12px;
-            border-radius: $border-radius-50;
+// teacher's team:--------------
+.our-staff {
+    .teacher-details-box {
+      .teacher-photo {
+       .person-img{
+        width: 366px;
+       }  
+          &:hover {
+            transform: scale(1.05); 
+            transition: all 1s ;
+          }
         }
-        .border {
-            border-radius: $border-radius-50;
-            padding: 10px;
-            border: $border-width-1 $border-solid $secondary;
-        }
+      }
     }
-}
+  
+  

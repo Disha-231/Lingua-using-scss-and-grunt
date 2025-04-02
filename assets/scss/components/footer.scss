@@ -1,0 +1,16 @@
+@use "../variables.scss" as *;
+// footer
+.footer {
+    .footer-icon {
+        .border-fb {
+            border: $border-width-1 $border-solid $secondary;
+            padding: 10px 12px;
+            border-radius: $border-radius-50;
+        }
+        .border {
+            border-radius: $border-radius-50;
+            padding: 10px;
+            border: $border-width-1 $border-solid $secondary;
+        }
+    }
+}

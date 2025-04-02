@@ -1,13 +1,14 @@
 @use "../variables.scss" as *;
-.merge-header-slider {
+.wrap-header-slider {
     background-color: $bg-color;
     margin: 40px;
     border-radius: $border-radius-50;
 }
 .header {
-    .menu {
-        .menubar {
-            padding-left: 100px;
-        }
+    @media (max-width: $lg-breakpoint) {
+      .primary-blank{
+        display: none;
+      }
     }
+  
 }

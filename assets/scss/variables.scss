@@ -6,19 +6,32 @@ $font-family-primary: "Mulish", sans-serif;
 $primary: #524fd5;
 $white: #fff;
 $gray: #666680;
-$black: #000000;
+$black: #181b32;
 $light-gray: #e8e8f6;
 $bg-color: #fff5f1;
 $dark-gray: #999;
 $secondary: #ccc;
 $light: #f8fafe;
+$shade: #b0b0c0;
 
 // Spacing
-$space1: 1px;
-$space2: 2px;
-$space4: 4px;
-$space5: 5px;
 $space6: 6px;
+$space10: 10px;
+$space16: 16px;
+$space26: 26px;
+$space50: 50px;
+$space20: 20px;
+$space80: 80px;
+$space100: 100px;
+$space120: 120px;
+$space150: 150px;
+$space500: 500px;
+
+// opacity
+$opacity: 1;
+
+// display
+$display-none: none;
 
 // Font size
 $font-10: 10px;
@@ -69,8 +82,8 @@ $border-width-2: 2px;
 $border-solid: solid;
 
 // Transition
-$transition: 0.3s ease;
-$transition-2: 2s ease;
+$transition: all 0.3s ease;
+$transition-2: all 2s ease;
 
 // breakpoint
 $xll-breakpoint: 1400px;

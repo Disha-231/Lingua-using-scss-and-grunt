@@ -1,29 +1,47 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
-.merge-header-slider {
+.wrap-header-slider {
   background-color: #fff5f1;
   margin: 40px;
   border-radius: 50px;
 }
 
-.header .menu .menubar {
-  padding-left: 100px;
+@media (max-width: 992px) {
+  .header .primary-blank {
+    display: none;
+  }
 }
 
-.get-started-fill {
+.primary-fill-btn,
+.trial-form-btn {
   background-color: #524fd5;
   color: #fff;
   border-radius: 70px;
-  padding: 18px 32px;
+}
+.primary-fill-btn:hover,
+.trial-form-btn:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.primary-fill-btn:active,
+.trial-form-btn:active {
+  transform: scale(1);
 }
 
-.get-started-blank {
+.primary-blank-btn {
   background-color: #fff;
-  border-radius: 50px;
   color: #524fd5;
+  border-radius: 70px;
+}
+.primary-blank-btn:hover {
+  background-color: rgba(82, 79, 213, 0.1);
+  cursor: pointer;
+}
+.primary-blank-btn:active {
+  transform: scale(1);
 }
 
 .slider-action-btn {
-  padding: 7px 15px;
+  padding: 8px 16px;
   background-color: transparent;
   color: #e8e8f6;
   border: 1px solid #e8e8f6;
@@ -36,9 +54,13 @@
   background-color: #524fd5;
   color: #fff;
   border-color: #524fd5;
+  cursor: pointer;
+}
+.slider-action-btn:active {
+  transform: scale(0.95);
 }
 .slider-action-btn.prev {
-  right: 15%;
+  right: 14%;
 }
 .slider-action-btn.next {
   right: 10%;
@@ -48,33 +70,47 @@
   background-color: #524fd5;
   color: #fff;
   border-radius: 50px;
-  width: 25px;
+  width: 24px;
   border: 0;
-  height: 25px;
+  height: 24px;
   align-items: center;
   justify-content: center;
   display: flex;
 }
+.show-faq-ans:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+.show-faq-ans:active {
+  transform: scale(0.95);
+}
 
-.send {
-  background-color: #524fd5;
-  color: #fff;
-  font-size: 18px;
-  border-radius: 50px;
-  padding: 18px 28px;
+.form-input {
+  width: 410px;
+  padding: 15px;
   border: 0;
+  border-radius: 24px;
+  background-color: #f8fafe;
+  outline: none;
+}
+.form-input::placeholder {
+  color: #999;
+  font-size: 18px;
+}
+
+.footer .footer-icon .border-fb {
+  border: 1px solid #ccc;
+  padding: 10px 12px;
+  border-radius: 50px;
+}
+.footer .footer-icon .border {
+  border-radius: 50px;
+  padding: 10px;
+  border: 1px solid #ccc;
 }
 
 * {
   font-family: "Mulish", sans-serif;
-}
-
-.text-decoration-none {
-  text-decoration: none;
-}
-
-.list-style-none {
-  list-style: none;
 }
 
 .font-12 {
@@ -105,43 +141,35 @@
   font-size: 56px;
 }
 
-.margin {
-  margin: 100px 0;
+.text-light-gray {
+  color: #b0b0c0;
 }
 
-.button-border-none {
-  border: 0;
-}
-
-.light-gray {
-  color: #B0B0C0;
-}
-
-.gray {
+.text-gray {
   color: #666680;
 }
 
-.white {
+.text-white {
   color: #fff;
 }
 
-.black {
-  color: #000000;
+.text-black {
+  color: #181b32;
 }
 
-.blue {
+.text-blue {
   color: #524fd5;
 }
 
-.letter-space-1 {
-  letter-spacing: 1px;
+.bg-blue {
+  background-color: #524fd5;
 }
 
-.letter-space-2 {
-  letter-spacing: 2px;
+.bg-light {
+  background-color: #f8fafe;
 }
 
-.space-between-section {
+.space-between-section-70 {
   padding: 70px 0;
 }
 
@@ -149,39 +177,32 @@
   transform: translateY(-5px);
 }
 .student-review .student-infoo .swiper-pagination {
-  position: relative;
-  bottom: 150px;
   left: 47%;
+  top: 80%;
 }
 .student-review .student-infoo .swiper-pagination .swiper-pagination-bullet {
   width: 6px;
   height: 6px;
   background-color: #ccc;
   opacity: 1;
-  margin: 0 5px;
+  margin: 0 6px;
 }
 .student-review .student-infoo .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #524fd5;
 }
-@media (max-width: 767px) {
-  .student-review {
-    padding: 50px 0;
-  }
-  .student-review .student-sec-title {
-    padding: 25px 0;
-  }
-  .student-review .student-review-content {
-    text-align: center;
+@media (max-width: 992px) {
+  .student-review .student-infoo .swiper .swiper-pagination {
+    left: 40%;
+    top: 97%;
   }
 }
 
 .faq .faq-item {
   background: transparent;
-  border: 1px solid #ccc;
+  border: 1px solid #e8e8f6;
   margin: 20px 0;
-  padding: 15px;
+  padding: 16px;
   border-radius: 24px;
-  transition: background 0.3s ease;
 }
 .faq .faq-item.active {
   background: #524fd5;
@@ -201,28 +222,22 @@
   padding-top: 10px;
 }
 
-.free-trial .trial-info .email {
-  width: 410px;
-  padding: 15px;
-  border: 0;
-  border-radius: 24px;
-  background-color: #f8fafe;
-  outline: none;
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
-.free-trial .trial-info .email::placeholder {
-  color: #999;
-  font-size: 18px;
+.animate-on-scroll.animate-on-scroll.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
-.footer .footer-icon .border-fb {
-  border: 1px solid #ccc;
-  padding: 10px 12px;
-  border-radius: 50px;
+.our-staff .teacher-details-box .teacher-photo .person-img {
+  width: 366px;
 }
-.footer .footer-icon .border {
-  border-radius: 50px;
-  padding: 10px;
-  border: 1px solid #ccc;
+.our-staff .teacher-details-box .teacher-photo:hover {
+  transform: scale(1.05);
+  transition: all 1s;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,14 @@
+@use "../variables.scss" as *;
+  
+.form-input {
+    width: 410px;
+    padding: 15px;
+    border: 0;
+    border-radius: $border-radius-24;
+    background-color: #f8fafe;
+    outline: none;
+    &::placeholder {
+        color: $dark-gray;
+        font-size: 18px;
+    }
+}

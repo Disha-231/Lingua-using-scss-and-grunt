@@ -1,3 +1,4 @@
+// teacher's team:-----------------
 $(document).ready(function () {
   $(".teacher-slider").slick({
     slidesToShow: 3,
@@ -5,14 +6,14 @@ $(document).ready(function () {
     infinite: false,
     arrows: true,
     prevArrow:
-      '<button type="button" class="d-flex d-xs-none d-sm-none d-md-none d-lg-flex d-xl-flex align-items-center justify-content-center prev slider-action-btn">❮</button>',
+      '<button type="button" class="d-flex d-xs-none d-sm-none d-md-none me-4 d-lg-flex d-xl-flex align-items-center justify-content-center prev slider-action-btn">❮</button>',
     nextArrow:
-      '<button type="button" class="d-flex d-xs-none d-sm-none d-md-none d-lg-flex d-xl-flex align-items-center justify-content-center next slider-action-btn">❯</button>',
+      '<button type="button" class="d-flex d-xs-none d-sm-none d-md-none ms-5 d-lg-flex d-xl-flex align-items-center justify-content-center next slider-action-btn">❯</button>',
     responsive: [
       {
         breakpoint: 1200,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2.5,
         },
       },
       {
@@ -39,29 +40,6 @@ $(document).ready(function () {
   });
   updateButtonStates();
   $(".teacher-slider").on("afterChange", updateButtonStates);
-  function updateButtonStates() {
-    var slider = $(".teacher-slider");
-    var currentSlide = slider.slick("slickCurrentSlide");
-    var slideCount = slider.slick("getSlick").slideCount;
-    var slidesToShow = slider.slick("slickGetOption", "slidesToShow");
-    if (currentSlide === 0) {
-      $(".prev").removeClass("active");
-    } else {
-      $(".prev").addClass("active");
-    }
-    if (currentSlide >= slideCount - slidesToShow) {
-      $(".next").removeClass("active");
-    } else {
-      $(".next").addClass("active");
-    }
-    $(".prev, .next").removeClass("slick-disabled");
-    if (currentSlide === 0) {
-      $(".prev").addClass("slick-disabled");
-    }
-    if (currentSlide >= slideCount - slidesToShow) {
-      $(".next").addClass("slick-disabled");
-    }
-  }
 });
 // swiper in student-review
 document.addEventListener("DOMContentLoaded", function () {
@@ -96,7 +74,25 @@ document.querySelectorAll(".faq-item").forEach((item) => {
       button.textContent = "+";
     } else {
       answer.style.display = "block";
-      button.textContent = "−";
+      button.textContent = "-";
     }
+  });
+});
+// animation
+document.addEventListener("DOMContentLoaded", function() {
+  const animatedElements = document.querySelectorAll('.animate-on-scroll');
+  const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              entry.target.classList.add('show');
+              observer.unobserve(entry.target);
+          }
+      });
+  }, {
+      threshold: 0.1, 
+      rootMargin: '0px 0px -50px 0px' 
+  });
+  animatedElements.forEach(element => {
+      observer.observe(element);
   });
 });
