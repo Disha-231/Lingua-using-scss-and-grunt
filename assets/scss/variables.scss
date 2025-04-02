@@ -7,29 +7,20 @@ $primary: #524fd5;
 $white: #fff;
 $gray: #666680;
 $black: #000000;
+$light-gray: #e8e8f6;
 $bg-color: #fff5f1;
+$dark-gray: #999;
+$secondary: #ccc;
+$light: #f8fafe;
 
 // Spacing
+$space1: 1px;
 $space2: 2px;
 $space4: 4px;
 $space5: 5px;
 $space6: 6px;
 
 // Font size
-$h1-font-size: 60px;
-$h1-mobile-size: 28px;
-$h2-font-size: 40px;
-$h2-mobile-size: 24px;
-$h3-font-size: 32px;
-$h3-mobile-size: 20px;
-$h3-font-size: 32px;
-$h3-mobile-size: 20px;
-$h4-mobile-size: 16px;
-$h6-mobile-size: 14px;
-$h4-font-size: 24px;
-$h5-font-size: 20px;
-$h6-font-size: 18px;
-
 $font-10: 10px;
 $font-12: 12px;
 $font-14: 14px;
@@ -60,6 +51,8 @@ $font-weight-400: 400;
 $font-weight-500: 500;
 $font-weight-600: 600;
 $font-weight-700: 700;
+$font-weight-800: 800;
+$font-weight-900: 900;
 
 //border-radius
 $border-radius-10: 10px;
@@ -67,7 +60,6 @@ $border-radius-12: 12px;
 $border-radius-24: 24px;
 $border-radius-50: 50px;
 $border-radius-70: 70px;
-
 
 // Border width
 $border-width-1: 1px;
@@ -78,6 +70,7 @@ $border-solid: solid;
 
 // Transition
 $transition: 0.3s ease;
+$transition-2: 2s ease;
 
 // breakpoint
 $xll-breakpoint: 1400px;
@@ -85,18 +78,3 @@ $xl-breakpoint: 1200px;
 $lg-breakpoint: 992px;
 $md-breakpoint: 768px;
 $sm-breakpoint: 576px;
-
-//width
-$width-100: 100%;
-$width-50: 50%;
-$width-25: 25%;
-$width-75: 75%;
-$btn-width: 34px;
-$btn-height: 34px;
-
-//padding
-
-$padding-top-100: 100px;
-$padding-top-50: 50px;
-$padding-bottom-100: 100px;
-$padding-bottom-50: 50px;

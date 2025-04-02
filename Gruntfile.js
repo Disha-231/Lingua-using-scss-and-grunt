@@ -10,6 +10,9 @@ module.exports = function (grunt) {
           "assets/js/vendors/jquery.min.js",
           "assets/js/vendors/bootstrap.min.js",
           "assets/js/vendors/aos.js",
+          "assets/js/vendors/slick-slider.js",
+          "assets/js/vendors/slick.min.js",
+          "assets/js/vendors/swiper-js.js",
         ],
         dest: "assets/js/<%= pkg.name %>-compress.js",
       },
@@ -17,6 +20,9 @@ module.exports = function (grunt) {
         src: [
           "assets/css/vendors/bootstrap.min.css",
           "assets/css/vendors/aos.css",
+          "assets/css/vendors/slick.min.css",
+          "assets/css/vendors/slick-theme.css",
+          "assets/css/vendors/swiper-slider.css",
         ],
         dest: "assets/css/<%= pkg.name %>-compress.css",
       },
@@ -59,7 +65,7 @@ module.exports = function (grunt) {
         files: [
           "<%= concat.MargeJs.src %>",
           "<%= concat.MargeCSS.src %>",
-		      "assets/scss/**/*.scss",
+          "assets/scss/**/*.scss",
           "cssmin",
           "Gruntfile.js",
         ],

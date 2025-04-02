@@ -5,9 +5,9 @@ $(document).ready(function () {
     infinite: false,
     arrows: true,
     prevArrow:
-      '<button type="button" class="d-flex d-sm-none d-md-none d-lg-flex d-xl-flex align-items-center justify-content-center prev">❮</button>',
+      '<button type="button" class="d-flex d-xs-none d-sm-none d-md-none d-lg-flex d-xl-flex align-items-center justify-content-center prev slider-action-btn">❮</button>',
     nextArrow:
-      '<button type="button" class="d-flex d-sm-none d-md-none d-lg-flex d-xl-flex align-items-center justify-content-center next">❯</button>',
+      '<button type="button" class="d-flex d-xs-none d-sm-none d-md-none d-lg-flex d-xl-flex align-items-center justify-content-center next slider-action-btn">❯</button>',
     responsive: [
       {
         breakpoint: 1200,
@@ -63,9 +63,7 @@ $(document).ready(function () {
     }
   }
 });
-
 // swiper in student-review
-
 document.addEventListener("DOMContentLoaded", function () {
   var swiper = new Swiper(".mySwiper", {
     direction: "horizontal",
@@ -78,7 +76,6 @@ document.addEventListener("DOMContentLoaded", function () {
       delay: 5000,
       disableOnInteraction: true,
     },
-
     on: {
       init: function () {
         this.autoplay.run();
@@ -87,5 +84,19 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 });
+// faq question:---------
+document.querySelectorAll(".faq-item").forEach((item) => {
+  item.addEventListener("click", () => {
+    item.classList.toggle("active");
+    const answer = item.querySelector(".faq-answer");
+    const button = item.querySelector(".show-faq-ans");
 
-
+    if (answer.style.display === "block") {
+      answer.style.display = "none";
+      button.textContent = "+";
+    } else {
+      answer.style.display = "block";
+      button.textContent = "−";
+    }
+  });
+});

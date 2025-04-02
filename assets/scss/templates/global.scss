@@ -1,16 +1,61 @@
 @use "../variables.scss" as *;
-
-a{
-    text-decoration: none;
-    color: $gray;
+* {
+    font-family: $font-family-primary;
 }
-ul,
-li{
+.text-decoration-none {
+    text-decoration: none;
+}
+.list-style-none {
     list-style: none;
 }
-button{
+.font-12{
+    font-size: $font-12;  
+}
+.font-14 {
+    font-size: $font-14;
+}
+.font-18 {
+    font-size: $font-18;
+}
+.font-24 {
+    font-size: $font-24;
+}
+.font-32{
+    font-size: $font-32;
+}
+.font-48 {
+    font-size: $font-48;
+}
+.font-56{
+    font-size: $font-56;
+}
+.margin {
+    margin: 100px 0;
+}
+.button-border-none {
     border: 0;
 }
-body{
-    font-family: $font-family-primary;
+.light-gray{
+    color: #B0B0C0;
+}
+.gray {
+    color: $gray;
+}
+.white {
+    color: $white;
+}
+.black {
+    color: $black;
+}
+.blue {
+    color: $primary;
+}
+.letter-space-1{
+    letter-spacing: $space1;
+}
+.letter-space-2{
+    letter-spacing: $space2;
+}
+.space-between-section{
+    padding:70px 0 ;
 }
