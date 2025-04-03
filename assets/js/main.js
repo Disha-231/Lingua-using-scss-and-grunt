@@ -38,8 +38,6 @@ $(document).ready(function () {
       },
     ],
   });
-  updateButtonStates();
-  $(".teacher-slider").on("afterChange", updateButtonStates);
 });
 // swiper in student-review
 document.addEventListener("DOMContentLoaded", function () {
@@ -54,12 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
       delay: 5000,
       disableOnInteraction: true,
     },
-    on: {
-      init: function () {
-        this.autoplay.run();
-      },
-      slideChange: function () {},
-    },
+   
   });
 });
 // faq question:---------

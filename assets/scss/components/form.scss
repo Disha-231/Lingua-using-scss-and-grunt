@@ -1,8 +1,6 @@
 @use "../variables.scss" as *;
   
 .form-input {
-    width: 410px;
-    padding: $space16;
     border: 0;
     border-radius: $border-radius-24;
     background-color: $light;
